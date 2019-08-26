@@ -39,7 +39,7 @@ exports.update_a_article = function(req, res) {
       res.json(article);
     });
 };
-  
+
 exports.delete_a_article = function(req, res) {  
     Article.remove( req.params.id, function(err, article) {
       if (err)

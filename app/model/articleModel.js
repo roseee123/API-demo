@@ -53,6 +53,7 @@ Article.updateArticleById = function(id, article, result) {
         }
     });
 };
+
 Article.remove = function(id, result) {
     connection.query("delete from article where id = ?", [id], function(err, res) {
         if(err) {
